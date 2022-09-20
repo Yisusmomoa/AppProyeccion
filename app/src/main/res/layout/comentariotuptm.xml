@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ProfileImgComentario"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        />
+
+    <TextView
+        android:id="@+id/TxtUsernameComentario"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/ProfileImgComentario"
+        android:layout_height="wrap_content"
+        android:text="Nombre usuario" />
+
+
+    <TextView
+        android:id="@+id/TxtComentario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TxtUsernameComentario"
+        android:layout_alignLeft="@id/TxtUsernameComentario"
+        android:text="Comentario del usuarioaaaaaaaaaaa
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"></TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

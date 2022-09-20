@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="9dp"
+    android:layout_margin="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097"
+        android:elevation="2dp"
+
+        android:background="@color/browser_actions_divider_color"
+        >
+
+        <CheckBox
+            android:id="@+id/checkboxAlumno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></CheckBox>
+
+        <TextView
+            android:id="@+id/txtUsernameGrupo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NombreUsuario"
+            android:paddingRight="5dp"></TextView>
+        <ImageView
+            android:id="@+id/ProfileImgGrupo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:src="@drawable/profile"
+
+            ></ImageView>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

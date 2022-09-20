@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_chat_main.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_crear_grupo.xml" value="0.264" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_crear_publicacion.xml" value="0.264" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_home.xml" value="0.264" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_main_email.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_maps.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_maps2.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_message_chat.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_message_chat_group.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_perfil_main.xml" value="0.4" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_publicacion.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_recompensa_main.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_register.xml" value="0.4" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_sub_gmain.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_tarea_crear_main.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_tarea_main.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_tarea_ver_main.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_usuarios_chat1a1.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_ver_tarea_creada.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/activity_view_full_image.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/alumnoitem.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/comentariotuptm.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/fragment_search.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/fragment_settings.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/grupo_lista.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/message_item_left.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/message_item_right.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/publicacion_item.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/tarea_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bjls2/OneDrive/Documentos/FCFM2/poi/PocketSchool/app/src/main/res/layout/user_search_item_layout.xml" value="0.15989583333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

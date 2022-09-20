@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearPublicacionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/amarillo"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Titulo publicación"
+            android:textColor="@color/cafe"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/TituloPublicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Titulo publicacion"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cuerpo Publicacion"
+            android:textColor="@color/cafe"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/CuerpoPublicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Cuerpo publicacion"
+            android:inputType="textCapSentences|textNoSuggestions|textMultiLine"
+            android:maxLines="6"
+            android:minLines="1"></EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Img"
+                    android:textSize="24sp"></TextView>
+
+                <ImageButton
+                    android:id="@+id/ImgButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/amarillo"
+                    android:src="@drawable/ic_attach_file">
+
+                </ImageButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="File"
+                    android:textSize="24sp">
+
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/FileButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/amarillo"
+                    android:src="@drawable/ic_attach_file">
+
+                </ImageButton>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtRutaArchivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="texto del archivo"
+                android:visibility="gone"></TextView>
+
+            <ImageView
+                android:id="@+id/ImgPublicacion"
+                android:layout_width="280dp"
+                android:layout_height="250dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="25dp">
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPublicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/mostaza"
+            android:text="Publicar" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

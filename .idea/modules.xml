@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Pocket_School.iml" filepath="$PROJECT_DIR$/.idea/modules/Pocket_School.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Pocket_School.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Pocket_School.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Pocket_School.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Pocket_School.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Pocket_School.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Pocket_School.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Pocket_School.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Pocket_School.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>
