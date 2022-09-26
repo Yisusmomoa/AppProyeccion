@@ -22,14 +22,16 @@
         app:layout_constraintTop_toBottomOf="@+id/txtAsunto" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/comboTipoUsuarioLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:entries="@array/TipoUsuario"
         android:spinnerMode="dropdown"
         app:layout_constraintBottom_toTopOf="@+id/btn_send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.316"
-        tools:layout_editor_absoluteX="181dp" />
+        app:layout_constraintVertical_bias="0.316" />
 
     <Button
         android:id="@+id/btn_send"

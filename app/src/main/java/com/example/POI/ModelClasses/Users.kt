@@ -7,16 +7,18 @@ class Users {
     private var status:String=""
     private var search:String=""
     private var encrypt:Boolean=true
+    private var tipoUsuario:String=""
 
     constructor()
     constructor(uid: String, username: String, profile: String,
-                status: String, search: String,encrypt: Boolean) {
+                status: String, search: String,encrypt: Boolean, tipoUsuario: String) {
         this.uid = uid
         this.username = username
         this.profile = profile
         this.status = status
         this.search = search
         this.encrypt=encrypt
+        this.tipoUsuario=tipoUsuario
     }
 
     fun getUID():String?{
@@ -61,5 +63,10 @@ class Users {
         this.encrypt=encrypt
     }
 
-
+    fun gettipoUsuario():String{
+        return tipoUsuario
+    }
+    fun setTipoUsuario(tipoUsuario: String){
+        this.tipoUsuario=tipoUsuario
+    }
 }

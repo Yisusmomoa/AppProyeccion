@@ -3,6 +3,7 @@ package com.example.POI
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
@@ -25,6 +26,7 @@ class activity_Register : AppCompatActivity(){
     private var listagrupos= mutableListOf<Grupo>()
     var idgrupo:String=""
     var nombregrupo:String=""
+    var tipoUsuario:String=""
 
     var firebaseUser: FirebaseUser?=null
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,7 +36,7 @@ class activity_Register : AppCompatActivity(){
         mAuth= FirebaseAuth.getInstance()
         val btnsignup=findViewById<Button>(R.id.btn_signup)
         val spinner=findViewById<Spinner>(R.id.ComboGruposCarreras)
-
+        val comboTipoUsuario=findViewById<Spinner>(R.id.comboTipoUsuario)
         var spinnerGrupos:Spinner=findViewById(R.id.ComboGruposCarreras)
         var txt_NombreGrupo:TextView=findViewById(R.id.txtGrupoSeleccionado)
         loadGroups()
@@ -52,7 +54,21 @@ class activity_Register : AppCompatActivity(){
             }
 
         }
+        comboTipoUsuario.onItemSelectedListener=object:
+        AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                tipoUsuario= parent?.getItemAtPosition(position).toString()
+            }
 
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+            }
+
+        }
 
         btnsignup.setOnClickListener {
             registerUser()
@@ -115,6 +131,7 @@ class activity_Register : AppCompatActivity(){
                         userHashMap["status"]="offline"
                         userHashMap["search"]=username.toLowerCase()
                         userHashMap["encrypt"]=true
+                        userHashMap["tipoUsuario"]=tipoUsuario
 
                         refUsers.updateChildren(userHashMap)
                             .addOnCompleteListener {
@@ -124,14 +141,18 @@ class activity_Register : AppCompatActivity(){
                                     recompensasRef.child("Registrado")
                                         .child(firebaseUserID)
                                         .setValue(userHashMap)
+
                                     Toast.makeText(this, "Registrado con exito",
                                         Toast.LENGTH_LONG).show()
+
                                     refGroups=database.getReference()
                                         .child("groups")
                                         .child(idgrupo)
                                         .child("alumnosGrupo")
                                         .child(firebaseUserID)
+
                                     //val alumnolistagrupo=refGroups.push()
+
                                     refGroups.setValue(userHashMap)
                                     Handler().postDelayed({
                                         val intent=Intent(this@activity_Register, Home::class.java)
@@ -142,37 +163,6 @@ class activity_Register : AppCompatActivity(){
 
                                 }
                             }
-
-
-
-
-
-                        /*
-                                   * private var refGroups:DatabaseReference=database
-                                   * .getReference("ListaGruposAlumnos")
-                                   * */
-
-                       /* refGroups.addListenerForSingleValueEvent(object :ValueEventListener{
-                            override fun onDataChange(snapshot: DataSnapshot) {
-                                if(!snapshot.exists()){
-                                    refGroups.push()
-                                    refGroups.setValue(idgrupo,nombregrupo)
-
-                                }
-                            }
-                            override fun onCancelled(error: DatabaseError) {
-                            }
-                        })
-                        refGroups.child(idgrupo).child("alumnos").push()
-                        refGroups.child(idgrupo).child("alumnos").setValue(firebaseUserID)
-                        refGroups.child(idgrupo).child("alumnos").child("id").push()
-                        refGroups.child(idgrupo).child("alumnos")
-                            .child(firebaseUserID).setValue(userHashMap)*/
-
-
-
-
-
                     }
                     else{
                         Toast.makeText(this, "Error: ${task.exception?.message.toString()}", Toast.LENGTH_SHORT).show()

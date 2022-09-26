@@ -14,4 +14,8 @@
     <string name="title_activity_maps2">MapsActivity2</string>
     <string name="usar_esta_ubicacion">Usar esta ubicacion</string>
 
+    <string-array name="TipoUsuario">
+        <item>Maestro</item>
+        <item>Alumno</item>
+    </string-array>
 </resources>

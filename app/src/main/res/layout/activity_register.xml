@@ -78,10 +78,10 @@
         android:text="Registrate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextUserName"
-        app:layout_constraintVertical_bias="0.798" />
+        app:layout_constraintVertical_bias="0.797" />
 
     <TextView
         android:id="@+id/textView2"
@@ -134,7 +134,7 @@
         android:paddingEnd="5dp"
         android:paddingRight="5dp"
         android:text="Tipo:"
-        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintBottom_toTopOf="@+id/comboTipoUsuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
@@ -142,14 +142,16 @@
         app:layout_constraintVertical_bias="0.581" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/comboTipoUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:entries="@array/TipoUsuario"
         android:spinnerMode="dropdown"
         app:layout_constraintBottom_toTopOf="@+id/ComboGruposCarreras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextUserName"
-        app:layout_constraintVertical_bias="0.688"
-        tools:layout_editor_absoluteX="172dp" />
+        app:layout_constraintVertical_bias="0.733" />
 
     <TextView
         android:id="@+id/txtGrupoSeleccionado"
@@ -158,9 +160,9 @@
         android:text="Grupo"
         app:layout_constraintBottom_toTopOf="@+id/btn_signup"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ComboGruposCarreras"
-        app:layout_constraintVertical_bias="0.357" />
+        app:layout_constraintVertical_bias="0.377" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
