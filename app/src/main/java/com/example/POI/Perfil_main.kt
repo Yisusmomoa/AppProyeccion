@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
@@ -24,6 +25,9 @@ class Perfil_main : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perfil_main)
         var Encript=findViewById<ImageView>(R.id.Encript)
+        val txtTipoUsuario=findViewById<TextView>(R.id.txtTipoUsuario)
+        val btn_Salir=findViewById<Button>(R.id.btn_Salir)
+
         //Usuario logeado, mostrar info
         firebaseUser=FirebaseAuth.getInstance().currentUser
         refUsers=FirebaseDatabase.getInstance().reference.child("Users").child(firebaseUser!!.uid)
@@ -37,6 +41,13 @@ class Perfil_main : AppCompatActivity() {
                 if(snapshot.exists()){
                     user=snapshot.getValue(Users::class.java)
                     userNameInfo.setText(user!!.getUsername())
+                    if (user!!.gettipoUsuario()=="Maestro"){
+                        Log.d("Tipo", "Soy maestro")
+                    }
+                    else{
+                        Log.d("Tipo", "Soy alumno")
+                    }
+                    txtTipoUsuario.setText(user!!.gettipoUsuario())
                     Picasso.get().load(user!!.getProfile()).placeholder(R.drawable.profile).into(photoUserInfo)
                     if(user!!.getEncrypt()){
                         Encript.setImageResource(R.drawable.lock)
@@ -61,7 +72,13 @@ class Perfil_main : AppCompatActivity() {
                 encruserupdate["encrypt"]=true
                 refUsers!!.updateChildren(encruserupdate)
             }
-
+        }
+        btn_Salir.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+            val intent=Intent(this, MainActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
+            startActivity(intent)
+            finish()
         }
 
         val Subgrupo = this.findViewById<ImageButton>(R.id.btn_sgrupo)

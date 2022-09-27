@@ -41,21 +41,12 @@ class Home : AppCompatActivity() {
         val Tarea = this.findViewById<ImageButton>(R.id.btn_tarea)
         val Subgrupo = this.findViewById<ImageButton>(R.id.btn_sgrupo)
 
-        val btnLogOut=this.findViewById<Button>(R.id.btnLogOut)
-
         val rvPublicaciones=findViewById<RecyclerView>(R.id.rvPublicaciones)
         rvPublicaciones.layoutManager= LinearLayoutManager(this)
         listaPublicaciones= arrayListOf<Publicacion>()
-       /* val publicacionesHardcode= mutableListOf<Publicacion>()
-        for (i in 0..99){
-            publicacionesHardcode.add(
-                Publicacion()
-            )
-        }*/
+
         ObtenerGrupoUsuario()
         //cargarPublicaciones()
-
-
 
         buttonactu.setOnClickListener {
             val crearPublicacion=Intent(this,CrearPublicacionActivity::class.java)
@@ -98,13 +89,6 @@ class Home : AppCompatActivity() {
             startActivity(VentanaTarea)
         }
 
-        btnLogOut.setOnClickListener {
-            FirebaseAuth.getInstance().signOut()
-            val intent=Intent(this@Home, MainActivity::class.java)
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
-            startActivity(intent)
-            finish()
-        }
 
     }
     

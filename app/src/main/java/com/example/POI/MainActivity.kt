@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
     private  lateinit var mAuth: FirebaseAuth
 
     var firebaseUser: FirebaseUser?=null
-    var tipoUsuario:String=""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,23 +21,8 @@ class MainActivity : AppCompatActivity() {
 
         val Singup = findViewById<Button>(R.id.btn_send) //login
         val Registrar=findViewById<Button>(R.id.btn_signup)
-        val comboTipoUsuarioLogin=findViewById<Spinner>(R.id.comboTipoUsuarioLogin)
-        comboTipoUsuarioLogin.onItemSelectedListener=object :
-        AdapterView.OnItemSelectedListener{
-            override fun onItemSelected(
-                parent: AdapterView<*>?,
-                view: View?,
-                position: Int,
-                id: Long
-            ) {
-                tipoUsuario= parent?.getItemAtPosition(position).toString()
-            }
 
-            override fun onNothingSelected(parent: AdapterView<*>?) {
 
-            }
-
-        }
         Singup.setOnClickListener{
             loginUser()
         }

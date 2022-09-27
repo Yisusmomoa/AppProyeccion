@@ -136,11 +136,13 @@
             android:backgroundTint="@color/mostaza" />
 
         <TextView
+            android:id="@+id/txtTipoUsuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="10dp"
+            android:padding="3dp"
             android:fontFamily="sans-serif-black"
-            android:text="Publicaciones del usuario" />
+            android:text="Tipo usuario" />
 
 
 
